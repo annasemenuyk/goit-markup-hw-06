@@ -371,9 +371,20 @@
           </li>
         </ul>
       </div>
+      <form action="#" class="footer-subscription-form">
+        <p class="footer-subscription">Подпишитесь на рассылку</p>
+        <span class="footer-subscription-fild-main"><label class="footer-subscription-fild">
+            <input type="email" name="user-mail" class="footer-subscription-text-input" placeholder="E-mail">
+          </label>
+          <button type="submit" class="footer-subscription-button">Подписаться
+            <span><svg class="footer-subscription-button-icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg></span>
+          </button></span>
+      </form>
     </div>
   </footer>
-  <div class="backdrop is-hiddenі" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal"> <button type="button" class="modal-close-button" data-modal-close><svg class="modal-close"
           height="18px" width="18px">
           <use href="./images/icons.svg#close-black"></use>
@@ -402,20 +413,21 @@
               <use href="./images/icons.svg#email-black"></use>
             </svg>
           </span>
-
         </label>
         <label class="modal-contacts-fild">Комментарий
           <textarea name="user-message" class="modal-contacts-aria" placeholder="Введите текст"></textarea>
         </label>
-        <input type="checkbox" name="user-policy" class="modal-checkbox" id="checkbox-policy" required>
-        <label for="checkbox-policy" class="modal-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a
-            class="modal-checkbox-policy-a link" href="Условия договора">Условия договора</a></label>
+        <label for="checkbox-policy" class="modal-checkbox-policy">
+          <input type="checkbox" name="user-policy" class="modal-checkbox visually-hidden" id="checkbox-policy"
+            required>
+          <span class="modal-checkbox-icon"> </span>
+          Соглашаюсь с рассылкой и принимаю <a class="modal-checkbox-policy-a link" href="Условия договора"> Условия
+            договора</a></label>
         <button type="submit" class="modal-button">Отправить</button>
       </form>
     </div>
   </div>
-  <!--<script src="./js/modal.js"></script>-->
-
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
